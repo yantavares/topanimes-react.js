@@ -1,19 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-function App() {
+import "./index.css";
+import { books } from "./books";
+import Book from "./Book";
+
+function BookList() {
+  const getBook = (id) => {
+    const book = books.find((book) => book.id === id);
+    console.log(book);
+  };
   return (
-    <div>
-      <h1> My first test </h1>
-      <Person />
-      <Message />
-    </div>
+    <section className="booklist">
+      {books.map((book) => {
+        return <Book {...book} key={book.id} getBook={getBook} />;
+      })}
+    </section>
   );
 }
 
-const Person = () => <h2> Test </h2>;
-const Message = () => <p> This is my message! </p>;
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<App />);
+root.render(<BookList />);
