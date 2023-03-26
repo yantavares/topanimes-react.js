@@ -2,23 +2,38 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import "./index.css";
-import { books } from "./books";
-import Book from "./Book";
+import { animes } from "./animes";
+import Anime from "./Anime";
 
-function BookList() {
-  const getBook = (id) => {
-    const book = books.find((book) => book.id === id);
-    console.log(book);
+function AnimeList() {
+  const getAnime = (id) => {
+    const anime = animes.find((anime) => anime.id === id);
+    console.log(anime);
   };
   return (
-    <section className="booklist">
-      {books.map((book) => {
-        return <Book {...book} key={book.id} getBook={getBook} />;
-      })}
-    </section>
+    <>
+      <h2 className="title">
+        Top 10 Anime List by{" "}
+        <a className="link" href="https://github.com/yantavares">
+          yantavares
+        </a>{" "}
+      </h2>
+      <section className="animelist">
+        {animes.map((anime, index) => {
+          return (
+            <Anime
+              {...anime}
+              key={anime.id}
+              getAnime={getAnime}
+              number={index}
+            />
+          );
+        })}
+      </section>
+    </>
   );
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<BookList />);
+root.render(<AnimeList />);
