@@ -4,8 +4,8 @@ const anime = (props) => {
   return (
     <article className="anime">
       <span className="number"> # {number + 1} </span>
-      <h3>{title}</h3>
-      <h2>{author}</h2>
+      <h2>{title}</h2>
+      <h4>{author}</h4>
       <img src={image} alt="test" />
       <button className="btn" onClick={() => getAnime(id)}>
         {" "}

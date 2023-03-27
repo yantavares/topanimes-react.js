@@ -7,7 +7,7 @@
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: #f1f5f8;
+  background: #e7eaeb;
   color: #222;
 }
 
@@ -30,26 +30,26 @@ body {
 }
 
 .link {
-  color: rgb(131, 101, 101);
+  color: #c35600;
   text-decoration: none;
 }
 
 .number {
-  top: 0;
+  top: 0rem;
   left: 0;
   font-size: 1rem;
   padding: 0.75rem;
   border-top-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  background: orange;
+  background: #c35600;
   color: #fff;
   position: absolute;
 }
 
 @media screen and (min-width: 768px) {
   .animelist {
-    grid-template-columns: repeat(3, 1fr);
-    align-items: start;
+    grid-template-columns: repeat(4, 1fr);
+    /* align-items: start; */
   }
 }
 .anime {
@@ -58,6 +58,7 @@ body {
   padding: 2rem;
   text-align: center;
   position: relative;
+  box-shadow: 8px 8px 6px #888888;
 }
 .anime img {
   width: 100%;
@@ -66,13 +67,13 @@ body {
 .anime h2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .anime h4 {
   color: #617d98;
   font-size: 0.75rem;
-  margin-top: 0.5rem;
+  margin: 0.5rem;
   letter-spacing: 2px;
 }
 .anime p {
