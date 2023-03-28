@@ -18,6 +18,12 @@ function AnimeList() {
           yantavares
         </a>{" "}
       </h2>
+      <section className="about shadow">
+        {" "}
+        I don't really watch that musch anime so don't take this list too
+        seriously. I made this site in order to learn the basics of the React
+        framework :){" "}
+      </section>
       <section className="animelist">
         {animes.map((anime, index) => {
           return (

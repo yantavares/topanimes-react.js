@@ -11,6 +11,22 @@ body {
   color: #222;
 }
 
+.about {
+  background-color: #fff;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  padding: 1.6rem;
+  /* border: 2px solid black; */
+  text-align: justify;
+  text-justify: inter-word;
+  width: 90vw;
+  max-width: 600px;
+}
+
+.shadow {
+  box-shadow: 7px 7px 8px #888888;
+}
+
 .animelist {
   width: 90vw;
   max-width: 1170px;
@@ -58,7 +74,6 @@ body {
   padding: 2rem;
   text-align: center;
   position: relative;
-  box-shadow: 8px 8px 6px #888888;
 }
 .anime img {
   width: 100%;
