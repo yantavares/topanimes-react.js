@@ -13,16 +13,17 @@ function AnimeList() {
   return (
     <>
       <h2 className="title">
-        Top 10 Anime List by{" "}
+        Top 10 Anime List by
         <a className="link" href="https://github.com/yantavares">
           yantavares
-        </a>{" "}
+        </a>
       </h2>
       <section className="about shadow">
-        {" "}
-        I don't really watch that musch anime so don't take this list too
-        seriously. I made this site in order to learn the basics of the React
-        framework :){" "}
+        <p>
+          I don't really watch that musch anime so don't take this list too
+          seriously. I made this site in order to learn the basics of the React
+          framework :)
+        </p>
       </section>
       <section className="animelist">
         {animes.map((anime, index) => {
