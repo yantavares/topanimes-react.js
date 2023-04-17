@@ -1,7 +1,8 @@
-#Course (Read READMEs :) )
+# Course (Read READMEs :) )
+
 https://github.com/john-smilga/react-course-v3
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/faceanime/create-react-app).
 
