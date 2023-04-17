@@ -13,7 +13,7 @@ function AnimeList() {
   return (
     <>
       <h2 className="title">
-        Top 10 Anime List by
+        Top 10 Anime List by{" "}
         <a className="link" href="https://github.com/yantavares">
           yantavares
         </a>
