@@ -1,4 +1,4 @@
-# Course (Read READMEs :) )
+# Course (Read READMEs :p )
 
 https://github.com/john-smilga/react-course-v3
 
