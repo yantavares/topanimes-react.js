@@ -1,4 +1,4 @@
-const anime = (props) => {
+const Anime = (props) => {
   const { title, author, image, getAnime, id, number } = props;
   // console.log(title, author);
   return (
@@ -15,4 +15,4 @@ const anime = (props) => {
   );
 };
 
-export default anime;
+export default Anime;
